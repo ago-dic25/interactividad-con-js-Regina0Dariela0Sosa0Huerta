@@ -1,0 +1,244 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+ul {
+  list-style-type:none;
+}
+
+nav{
+  background-color: white;
+  border-radius:20px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.tarjeta img {
+  width: 100%;
+}
+
+#menu {
+  display: none;
+}
+
+#buscar {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#buscar:hover {
+  background-color: #0056b3;
+}
+
+
+#ads,#seeAll, #bestOfTheWeek, #travel{
+  border-radius: 50px;
+}
+
+section img, aside img {
+  border-radius: 50px;
+}
+
+.tarjeta {
+  margin: 20px 0;
+}
+
+#travel {
+  position: relative;
+}
+
+#travel span {
+  position: absolute;
+  background-color: white;
+  border-radius: 20px;
+  padding: 0 20px;
+  top: 20px;
+  left: 20px;
+  font-size: 50px;
+}
+
+#travel button{
+  position: absolute;
+  background-color: white;
+  border-radius: 20px;
+  padding: 0 20px;
+  top: 80px;
+  left: 20px;
+  font-size: 40px;
+}
+
+#travel .info {
+  position: absolute;
+  padding: 0 20px;
+  bottom: 20px;
+  right: 20px;
+}
+
+#travel .info h2,
+#travel .info span {
+  font-size: 20px;
+  background-color: white;
+  border-radius: 20px;
+  margin: 10px 0;
+}
+
+#travel .info span {
+  left: 0;
+  top: 0;
+  position: relative;
+}
+
+#ads {
+  background-color: lightgreen;
+}
+#seeAll {
+  background-color: lightblue;
+}
+
+#ads {
+  position: relative;
+  padding: 40px;
+  text-align: center;
+}
+#ads button {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  border: solid 1px black;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 20px;
+}
+#ads * {
+  display: block;
+}
+
+.ocultar {
+  display: none;
+}
+.mostrar {
+  display: block;
+}
+
+/*Breakpoints*/
+@media screen and (min-width: 769px){
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  nav ul{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  section {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+  }
+  aside {
+    width: 30%;
+    margin: 0 auto;
+  }
+  #travel{
+    background-color: hotpink;
+  }
+
+  #ads,#seeAll {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width:768px) {
+  nav {
+    border: solid 1px black;
+  }
+  #buscar {
+    display: none;
+  }
+  #menu {
+    display: block;
+    width: 100%;
+  }
+  nav ul {
+    display: none;
+  }
+
+  #travel span{
+    font-size: 25px;
+  }
+  #travel button {
+    font-size: 20px;
+  }
+}
+.rojo {
+  background-color: red;
+}
+
+.ocultar {
+  display: none;
+}
+
+/**MODO OSCURO**/
+
+body.dark {
+  background-color: #121212;
+  color: #f0ff0f;
+}
+
+body.dark header {
+  color: #f0f0f0;
+}
+
+body.dark nav {
+  background-color: #1e1e1e;
+  border: solid 1px #333;
+}
+
+body.dark a {
+  color: #a0c4ff;
+}
+
+body.dark .tarjeta {
+  background-color: #2b2b2b;
+  color: #f0f0f0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+body.dark #ads {
+  background-color: #38761d;
+  color: #ffffff;
+}
+
+body.dark #seeAll {
+  background-color: #0d47a1;
+  color: #ffffff;
+}
+
+body.dark #travel span,
+body.dark #travel button,
+body.dark #travel .info h2,
+body.dark #travel .info span {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border: solid 1px #444;
+}
+
+body.dark button {
+  color: #f0f0f0;
+}
+
+body.dark #ads button {
+  border: solid 1px #ffffff;
+}
